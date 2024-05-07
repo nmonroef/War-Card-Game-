@@ -1,0 +1,83 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+#main {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+   
+}
+h1 {
+    text-align: center;
+    margin-top: 5%;
+}
+.instructions {
+  border: solid black 1px;
+  height: 410px;
+  width: 21%;
+  margin-left: 9%;
+  margin-top: 3%;
+
+    
+}
+.instructions ul {
+    margin: 0;
+    padding-left: 20px; 
+  }
+  
+  .instructions h3 {
+    margin: 0;
+   
+  }
+  .instructions h2 {
+    text-align: center;
+    padding: 5px;
+  }
+  .instructions p {
+    padding: 5px;
+  }
+  #main .cardSection {
+    height: 410px;
+    width: 40%;
+    border: solid black 1px;
+    margin-top: 3%;
+    text-align: center;
+  }
+  #main .cardSection h3 {
+    padding: 10px;
+  }
+  #main .cardSection .imgContainer {
+    height: 100px;
+    
+  }
+  #main .cardSection .imgContainer img {
+    width: 130px;
+    height: 130px;
+  }
+  #main .stats {
+    border: solid black 1px;
+    height: 410px;
+    width: 21%;
+    margin-right: 9%;
+    margin-top: 3%;
+  }
+  button {
+    display: block;
+    margin: 0 auto;
+   margin-top: 50px;
+    margin-bottom: 10px;
+    width: 20%;
+    
+  }
+  #main .stats h3 {
+    text-align: center;
+    padding: 20px;
+    font-size: 25px;
+  }
+  #main .stats .remainingCards {
+    text-align: center;
+    color: red;
+    font-size: 25px;
+  }
