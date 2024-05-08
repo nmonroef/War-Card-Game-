@@ -1,83 +1,171 @@
+/* Reset styles for all elements */
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
+
+/* Styling for the background container */
+.background {
+  background-image: url('world-of-tanks-4k-desktop-background-wallpaper-thumb.jpg');
+  background-size: cover; /* Adjusts the background image to cover the entire container */
+  padding: 20px;
+}
+
+/* Styling for the main container */
 #main {
-    height: 100vh;
-    width: 100%;
-    display: flex;
-   
+  background-color: rgba(255, 255, 255, 0.288); /* Semi-transparent white background for the main container */
+  border-radius: 10px; /* Adds rounded corners to the main container */
+  padding: 20px; /* Adds padding inside the main container */
+  height: 100vh;
+  width: 100%;
+  display: flex;
 }
+
+/* Styling for the heading */
 h1 {
-    text-align: center;
-    margin-top: 5%;
+  text-align: center;
+  margin-top: 5%;
 }
+
+/* Styling for the instructions section */
 .instructions {
   border: solid black 1px;
   height: 410px;
   width: 21%;
   margin-left: 9%;
   margin-top: 3%;
+}
+
+.instructions ul {
+  margin: 0;
+  padding-left: 20px;
+}
+
+.instructions h3 {
+  margin: 0;
+}
+
+.instructions h2 {
+  text-align: center;
+  padding: 5px;
+}
+
+.instructions p {
+  padding: 5px;
+}
+
+/* Styling for the card section */
+#main .cardSection {
+  height: 410px;
+  width: 40%;
+  border: solid black 1px;
+  margin-top: 3%;
+  text-align: center;
+}
+
+#main .cardSection h3 {
+  padding: 10px;
+}
+
+#main .cardSection .imgContainer {
+  height: 100px;
+}
+
+#main .cardSection .imgContainer img {
+  width: 130px;
+  height: 130px;
+}
+
+/* Styling for the stats section */
+#main .stats {
+  border: solid black 1px;
+  height: 410px;
+  width: 21%;
+  margin-right: 9%;
+  margin-top: 3%;
+}
+
+/* Styling for buttons */
+button {
+  display: block;
+  margin: 0 auto;
+  margin-top: 50px;
+  margin-bottom: 10px;
+  width: 20%;
+}
+
+/* Styling for score headings */
+#main .stats h3 {
+  text-align: center;
+  padding: 20px;
+  font-size: 25px;
+}
+
+/* Styling for remaining cards count */
+#main .stats .remainingCards {
+  text-align: center;
+  color: red;
+  font-size: 25px;
+}
+
+/* Styling for player scores */
+#main .stats p {
+  text-align: center;
+}
+
+#player1Score {
+  color: green;
+}
+
+#player2Score {
+  color: red;
+}
+
+/* Styling for heading */
+h1 {
+  color: whitesmoke;
+}
+
+@media only screen and (max-width: 1054px) {
+  body {
+    color: whitesmoke;
+    background-color: black;
+  }
 
     
-}
-.instructions ul {
-    margin: 0;
-    padding-left: 20px; 
-  }
   
-  .instructions h3 {
-    margin: 0;
-   
+  .instructions {
+    border: solid black 1px;
+    height: 520px;
+    width: 100%;
+    margin-left: unset;
+    margin-top: 3%;
+    display: block;
+    color: whitesmoke;
   }
-  .instructions h2 {
-    text-align: center;
-    padding: 5px;
-  }
-  .instructions p {
-    padding: 5px;
+  #main {
+    background-color: rgba(255, 255, 255, 0.288); /* Semi-transparent white background for the main container */
+    border-radius: 10px; /* Adds rounded corners to the main container */
+    padding: 20px; /* Adds padding inside the main container */
+    height: 100vh;
+    width: 100%;
+    display: unset;
   }
   #main .cardSection {
     height: 410px;
-    width: 40%;
+    width: 100%;
     border: solid black 1px;
     margin-top: 3%;
     text-align: center;
-  }
-  #main .cardSection h3 {
-    padding: 10px;
-  }
-  #main .cardSection .imgContainer {
-    height: 100px;
-    
-  }
-  #main .cardSection .imgContainer img {
-    width: 130px;
-    height: 130px;
   }
   #main .stats {
     border: solid black 1px;
     height: 410px;
-    width: 21%;
+    width: 100%;
     margin-right: 9%;
     margin-top: 3%;
   }
-  button {
-    display: block;
-    margin: 0 auto;
-   margin-top: 50px;
-    margin-bottom: 10px;
-    width: 20%;
-    
-  }
-  #main .stats h3 {
-    text-align: center;
-    padding: 20px;
-    font-size: 25px;
-  }
-  #main .stats .remainingCards {
-    text-align: center;
-    color: red;
-    font-size: 25px;
-  }
+  
+}
+  
